@@ -7,6 +7,7 @@
     "dev": "browser-sync start --server --files main.js **/*.js styles.css index.html",
     "copy:html": "cpy ./*.html ./build/",
     "copy:js": "cpy ./lib ./*.js ./build/",
+    "copy:css": "cpy ./styles.css ./build/",
     "build": "concurrently npm:copy:*"
   },
   "keywords": [],
